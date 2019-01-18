@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form </title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/form.css">
+  </head>
+  <body>
+    <div class="container">
+      <form action="#" method="post" class="form">
+        <div class="inside-container">
+          <input class="input" type="text" name="name" placeholder="Name">
+          <input class="input" type="password" name="password" placeholder="Password">
+          <div class="radioContainer">
+            <label class="gender">Gender :</label>
+            <ul>
+              <li class="radioOption">
+                <input type="radio" name="gender" value="male" id="male">
+                <div class="check"></div>
+                <label>Male</label>
+              </li>
+              <li class="radioOption">
+                <input type="radio" name="gender" value="Female" id="female">
+                <div class="check"></div>
+                <label>Female</label>
+              </li>
+              <li class="radioOption">
+                <input type="radio" name="gender" value="Other" id="other">
+                <div class="check"></div>
+                <label>Other</label>
+              </li>
+            </ul>
+          </div> <!--  radioContainer -->
+          <div class="checkboxContainer">
+            <label for="interest" class="interest">Your interest :</label>
+            <ul class="checkboxUl">
+
+              <li class="checkboxOption">
+                <input type="checkbox" name="html" id="html">
+                <label for="html">HTML</label>
+              </li>
+
+              <li class="checkboxOption">
+                <input type="checkbox" name="css" id="css">
+                <label for="css">CSS</label>
+              </li>
+
+              <li class="checkboxOption">
+                <input type="checkbox" name="javascript" id="javascript">
+                <label for="javascript">JavaScript</label>
+              </li>
+
+              <li class="checkboxOption">
+                <input type="checkbox" name="c+" id="c+">
+                <label for="c+">C+</label>
+              </li>
+
+              <li class="checkboxOption">
+                <input type="checkbox" name="python" id="python">
+                <label for="python">Python</label>
+              </li>
+
+              <li class="checkboxOption">
+                <input type="checkbox" name="java" id="java">
+                <label for="java">Java</label>
+              </li>
+
+            </ul>  <!--  checkboxUl -->
+          </div>  <!--  checkboxContainer -->
+
+          <div class="dropdown">
+            <label>Select Time :</label>
+
+            <div class="select">
+              <select class="sel">
+                <option value="1">10:00</option>
+                <option value="2">11:00</option>
+                <option value="3">12:00</option>
+                <option value="4">13:00</option>
+                <option value="5">14:00</option>
+                <option value="6">15:00</option>
+                <option value="7">16:00</option>
+                <option value="8">17:00</option>
+                <option value="9">18:00</option>
+                <option value="10">19:00</option>
+                <option value="11">20:00</option>
+                <option value="12">21:00</option>
+              </select>
+            </div>
+
+          </div> <!--  dropdown -->
+
+          <div class="upload">
+            <label>Upload :</label>
+            <button class="btn">Choose file</button>
+            <input type="file" name="pic" accept="image/*">
+          </div>
+
+          <div class="textareaContainer">
+            <label>Comment :</label>
+            <textarea class="textarea" placeholder="Leave a comment!"></textarea>
+          </div>
+
+          <div class="btnContainer">
+            <input type="submit" class="submit" value="Submit">
+          </div>
+
+
+        </div> <!--  inside-container -->
+      </form>
+    </div> <!--  container -->
+  </body>
+</html>
